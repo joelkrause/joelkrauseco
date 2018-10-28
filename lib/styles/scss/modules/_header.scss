@@ -1,0 +1,13 @@
+header {
+    &.site--header {
+        .logo {
+            a {
+                color: var(--main-body-color);
+            }
+
+            h3 {
+                margin-top: 0;
+            }
+        }
+    }
+}

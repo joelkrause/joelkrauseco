@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="preloader"></div>
     <div class="page--wrapper">
         <header class="site--header">
             <div class="container">

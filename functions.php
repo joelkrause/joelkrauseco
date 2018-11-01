@@ -49,7 +49,7 @@ if ( ! function_exists( 'joelkrause' ) ) :
 	function joelkrause_styles() {
 		wp_enqueue_style( "style", get_stylesheet_directory_uri()."/lib/styles/css/main.css",false,'2.1','all');
 
-		wp_enqueue_script( "mainjs", get_stylesheet_directory_uri()."/lib/js/scripts.js", "all");
+		wp_enqueue_script( "mainjs", get_stylesheet_directory_uri()."/lib/js/scripts.min.js", "all");
 	}
 	add_action( 'wp_enqueue_scripts', 'joelkrause_styles' );
 ?>

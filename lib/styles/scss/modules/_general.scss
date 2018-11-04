@@ -4,8 +4,32 @@
     --accent-type: "Poppins", sans-serif;
 }
 
-@import url('https://rsms.me/inter/inter-ui.css');
-@import url('https://fonts.googleapis.com/css?family=Heebo:700,900');
+@font-face {
+    font-family: 'Inter UI';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/interui/.var.woff2') format("woff2-variations"),
+        url("../fonts/interui/-Regular.woff2") format("woff2"),
+        url("../fonts/interui/-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter UI';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/interui/.var.woff2') format("woff2-variations"),
+        url("../fonts/interui/-Italic.woff2") format("woff2"),
+        url("../fonts/interui/-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter UI';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/interui/.var.woff2') format("woff2-variations"),
+        url("../fonts/interui/-Bold.woff2") format("woff2"),
+        url("../fonts/interui/-Bold.woff") format("woff");
+}
 
 body,
 html {

@@ -13,19 +13,20 @@
     <div class="page--wrapper">
         <header class="site--header">
             <div class="container">
-                <div class="logo">
-                    <a href="<?php echo home_url();?>">
-                        <h3>Joel Krause</h3>
-                    </a>
+                <div class="bar">
+                    <div class="logo">
+                        <a href="<?php echo home_url();?>">
+                            Joel Krause.
+                        </a>
+                    </div>
+                    <nav class="main--navigation">
+                        <?php
+                        wp_nav_menu( array(
+                        'theme_location' => 'primary',
+                        'menu_id'        => 'primary',
+                        ) );
+                    ?>
+                    </nav>
                 </div>
-                <?php if(is_home()) {?>
-                <div class="home--intro">
-                    I'm Joel &amp; I'm a frontend developer at <a href="#">Studio Chriate</a>, working with WordPress,
-                    WooCommerce and Shopify.
-                </div>
-                <?php } elseif(is_single()) {?>
-                <?php the_title();?>
-                <?php get_the_date();?>
-                <?php } ?>
             </div>
         </header>

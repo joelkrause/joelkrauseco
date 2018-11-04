@@ -1,4 +1,8 @@
 <?php get_header();?>
+<div class="home--intro">
+    I'm Joel &amp; I'm a frontend developer at <a href="#">Studio Chriate</a>, working with WordPress,
+    WooCommerce and Shopify.
+</div>
 <h3>Articles</h3>
 <div class="posts">
     <ul class="post-list">

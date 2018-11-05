@@ -36,20 +36,8 @@ if ( ! function_exists( 'joelkrause' ) ) :
 	endif; // joelkrause
 	add_action( 'after_setup_theme', 'joelkrause' );
 
-	function jquery() {
-		if (!is_admin()) {
-			// comment out the next two lines to load the local copy of jQuery
-			wp_deregister_script('jquery');
-			wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', false, '3.3.1');
-			wp_enqueue_script('jquery');
-		}
-	}
-	add_action('init', 'jquery');
-
 	function joelkrause_styles() {
-		wp_enqueue_style( "style", get_stylesheet_directory_uri()."/lib/styles/css/main.css",false,'2.1','all');
-
-		wp_enqueue_script( "mainjs", get_stylesheet_directory_uri()."/lib/js/scripts.min.js", "all");
+		wp_enqueue_style( 'style', get_stylesheet_directory_uri() .'/lib/styles/css/main.css', array(), filemtime(get_stylesheet_directory() .'/lib/styles/css/main.css'), 'all' );
 	}
 	add_action( 'wp_enqueue_scripts', 'joelkrause_styles' );
 ?>

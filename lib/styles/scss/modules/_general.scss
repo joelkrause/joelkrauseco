@@ -28,6 +28,7 @@ html {
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    line-height: 1.5;
 }
 
 .page--wrapper {
@@ -46,4 +47,12 @@ hr {
     width: 25px;
     height: 3px;
     margin: 25px 0;
+}
+
+code {
+    max-width: 100%;
+    background: #f9f9f9;
+    display: block;
+    padding: 15px;
+    overflow-x: scroll;
 }

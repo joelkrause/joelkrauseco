@@ -36,8 +36,8 @@ if ( ! function_exists( 'joelkrause' ) ) :
 	endif; // joelkrause
 	add_action( 'after_setup_theme', 'joelkrause' );
 
-	function joelkrause_styles() {
-		wp_enqueue_style( 'style', get_stylesheet_directory_uri() .'/lib/styles/css/main.css', array(), filemtime(get_stylesheet_directory() .'/lib/styles/css/main.css'), 'all' );
-	}
-	add_action( 'wp_enqueue_scripts', 'joelkrause_styles' );
+function joelkrause_styles() {
+wp_enqueue_style( 'style', get_stylesheet_directory_uri() .'/lib/styles/css/main.css', array(), filemtime(get_stylesheet_directory() .'/lib/styles/css/main.css'), 'all' );
+}
+add_action( 'wp_enqueue_scripts', 'joelkrause_styles' );
 ?>

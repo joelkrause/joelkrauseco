@@ -1,8 +1,10 @@
 :root {
     --main-body-color: #333;
-    --primary-type: "Inter UI", sans-serif;
-    --accent-type: "Poppins", sans-serif;
+    --primary-type: sans-serif;
+    --accent-type: "Montserrat", sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
 @font-face {
     font-family: 'Inter UI';
@@ -13,22 +15,10 @@
         url("../fonts/interui/-Regular.woff") format("woff");
 }
 
-@font-face {
-    font-family: 'Inter UI';
-    font-style: italic;
-    font-weight: 400;
-    src: url('../fonts/interui/.var.woff2') format("woff2-variations"),
-        url("../fonts/interui/-Italic.woff2") format("woff2"),
-        url("../fonts/interui/-Italic.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Inter UI';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/interui/.var.woff2') format("woff2-variations"),
-        url("../fonts/interui/-Bold.woff2") format("woff2"),
-        url("../fonts/interui/-Bold.woff") format("woff");
+@mixin mediaquery($direction, $screen) {
+    @media ($direction: $screen) {
+        @content;
+    }
 }
 
 body,
@@ -53,9 +43,13 @@ html {
 }
 
 .page--wrapper {
-    max-width: 50%;
+    max-width: 100%;
     padding: 25px;
     margin: 0 auto;
+
+    @include mediaquery(min-width, 1024px) {
+        max-width: 50%;
+    }
 }
 
 hr {

@@ -9,8 +9,6 @@ header {
             align-items: center;
 
             .logo {
-                flex-grow: 1;
-
                 a {
                     color: var(--main-body-color);
                     text-decoration: none;
@@ -18,12 +16,18 @@ header {
                     font-weight: bold;
                 }
             }
+
+            .social--links {
+                flex-grow: 1;
+                text-align: right;
+            }
         }
     }
 }
 
 nav {
     &.main--navigation {
+        margin: 0 0 0 25px;
 
         ul,
         li {
@@ -43,7 +47,7 @@ nav {
                 }
 
                 a {
-                    color: var(--main-body-color);
+                    color: blue;
                     text-decoration: none;
 
                     &:hover {

@@ -8,7 +8,7 @@
     <?php wp_head();?>
 </head>
 
-<body>
+<body <?php body_class();?>>
     <div class="preloader"></div>
     <div class="page--wrapper">
         <header class="site--header">
@@ -27,6 +27,9 @@
                         ) );
                     ?>
                     </nav>
+                    <div class="social--links">
+                        <a href="https://twitter.com/Joel_Krause">Twitter</a>
+                    </div>
                 </div>
             </div>
         </header>

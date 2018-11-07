@@ -1,6 +1,6 @@
 :root {
     --main-body-color: #333;
-    --primary-type: sans-serif;
+    --primary-type: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 @mixin mediaquery($direction, $screen) {

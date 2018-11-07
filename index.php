@@ -3,7 +3,7 @@
     I'm Joel &amp; I'm a frontend developer at <a href="#">Studio Chriate</a>, working with WordPress,
     WooCommerce and Shopify.
 </div>
-<h3>Articles</h3>
+<h3>Posts</h3>
 <div class="posts">
     <ul class="post-list">
         <?php

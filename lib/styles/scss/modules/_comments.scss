@@ -1,0 +1,36 @@
+.post--comments {
+    button {
+        &.comments--open {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            width: 100%;
+            appearance: none;
+            border: 0;
+            background: rgba(0, 0, 0, 0);
+            padding: 15px 0;
+            cursor: pointer;
+            font-size: 18px;
+
+            span {
+                &.arrow {
+                    font-size: 22px;
+                    flex-grow: 1;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    &.visible {
+        button {
+            &.comments--open {
+                span {
+                    &.arrow {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}

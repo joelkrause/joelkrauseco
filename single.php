@@ -17,5 +17,6 @@
         <?php endwhile; ?>
         <?php endif; ?>
     </div>
+    <?php include ("modules/post-comments.php");?>
 </div>
 <?php get_footer();?>

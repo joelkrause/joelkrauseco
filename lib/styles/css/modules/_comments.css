@@ -1,0 +1,11 @@
+.post--comments button.comments--open {
+  width: 100%;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 18px; }

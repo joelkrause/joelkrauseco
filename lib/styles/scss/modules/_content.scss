@@ -28,17 +28,19 @@
     }
 }
 
+.home--intro,
 .post--header {
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-size: 2em;
+    font-family: var(--accent-type);
+    padding: 10vh 0;
+    text-align: center;
 
     h3 {
-        font-size: 2em;
-        text-align: center;
-        line-height: 1;
-        margin-top: 0;
+        font-weight: normal;
+    }
+
+    .date {
+        font-weight: 700;
+        font-size: 22px;
     }
 }

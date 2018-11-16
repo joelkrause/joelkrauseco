@@ -1,28 +1,48 @@
 header {
     &.site--header {
-        padding: 0 0 25px;
+        padding: 25px 0;
         margin: 0 auto 25px;
-        border-bottom: 1px solid #f8f8f8;
+        font-family: var(--accent-type);
 
-        .bar {
+        .container {
             display: flex;
             align-items: center;
+        }
 
-            .logo {
-                a {
-                    color: var(--main-body-color);
-                    text-decoration: none;
-                    font-size: 18px;
-                    font-weight: bold;
+        .logo {
+            a {
+                color: var(--main-body-color);
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+
+                .sub {
+                    font-weight: 100;
+                    color: #999;
+                    font-style: italic;
                 }
             }
+        }
+
+        .profile--image {
+            margin-right: 15px;
+
+            img {
+                border-radius: 50%;
+                width: 75px;
+            }
+        }
+
+        .social--links {
+            flex-grow: 0;
         }
     }
 }
 
 nav {
     &.main--navigation {
-        margin: 0 0 0 25px;
+        margin: 0;
+        flex-grow: 1;
 
         ul,
         li {
@@ -33,6 +53,7 @@ nav {
 
         ul {
             display: flex;
+            justify-content: center;
 
             li {
                 margin-right: 15px;
